@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="AI"></header>
+        <hr>
+
+        <a href="#Introduction" class="nav-link">
+            <li>Introduction</li>
+        </a>
+        <hr>
+        <a href="#What_Is_Intelligence?" class="nav-link">
+            <li>Superposition</li>
+        </a>
+        <hr>
+        <a href="#Learning" class="nav-link">
+            <li>Quantum Bits</li>
+        </a>
+        <hr>
+        <a href="#Reasoning" class="nav-link">
+            <li>Quantum Machine Learning</li>
+        </a>
+        <hr>
+        <a href="#Problem_Solving" class="nav-link">
+            <li>Conclusion</li>
+        </a>
+
+    </nav>
+    <main id="main-doc">
+        <a id="Introduction"></a>
+        <section class="main-section" id="Introduction">
+            <header class="main-header">Introduction</header>
+
+            <p class="just">
+                <strong>Quantum Computing</strong> is a cutting-edge field of computing that leverages the principles of quantum mechanics to process information in a fundamentally different way than classical computing. While classical computers rely
+                on bits (0s and 1s) to store and manipulate data, quantum computers use quantum bits, known as qubits. Unlike classical bits, qubits can exist in multiple states simultaneously, a phenomenon called superposition.
+                <div class="codeCase">
+                    <img src="https://cdn-cednl.nitrocdn.com/ZIEpBLjPiSWpOcIdsSTlIdzcQJzKTmWw/assets/images/optimized/rev-bce8e83/www.datatobiz.com/wp-content/uploads/2022/02/Quantum-Computing.jpeg" width="715" height="600" alt="Superposition and Entanglement">
+                </div>
+            </p>
+            <p class="just">
+                Quantum computing has the potential to revolutionize various industries, including cryptography, drug discovery, optimization problems, and artificial intelligence. It could provide breakthroughs in solving complex problems that are currently computationally
+                intractable for classical computers.
+            </p>
+            <div class="codeCase">
+                <code>If the classical computer takes five seconds to solve a complex mathematical problem like (689*12547836)/4587, the quantum computer will take only 0.005 seconds to give you the answer</code>
+            </div><br>
+        </section>
+        <a id="What_Is_Intelligence?"></a>
+        <section class="main-section" id="What_Is_Intelligence?">
+            <header class="main-header">Superposition</header>
+
+            <p class="just">
+                Superposition is when the quantum system is present in more than one state at the same time. It’s an inherent ability of the quantum system. We can consider the time machine as an example to explain superposition. The person in the time machine is present
+                in more than one place at the same time. Similarly, when a particle is present in multiple states at once, it is called superposition
+            </p>
+            <div class="codeCase">
+                <img src="https://cdn-cednl.nitrocdn.com/ZIEpBLjPiSWpOcIdsSTlIdzcQJzKTmWw/assets/images/optimized/rev-bce8e83/www.datatobiz.com/wp-content/uploads/2022/02/What-is-Quantum-Computing.jpeg" width="715">
+            </div>
+            <p class="just">
+                Entanglement is the correlation between the quantum particles. The particles are connected in a way that even if they were present at the opposite ends of the world, they’ll still be in sync and ‘dance’ simultaneously. The distance between the particles
+                doesn’t matter as the entanglement between them is very strong. Einstein had described this phenomenon as ‘spooky action at a distance’
+            </p>
+
+        </section>
+        <a id="Learning"></a>
+        <section class="main-section" id="Learning">
+            <header class="main-header">Quantum Bits(<strong>Qbits</strong>)</header>
+
+            <p class="just">
+                A quantum bit is a measure of data storage unit in quantum computers. The quantum bit is a subatomic particle that can be made of electrons or photons. Every quantum bit or Qbit adheres to the principles of superposition and entanglement. This makes things
+                hard for scientists to generate Qbits and manage them. That’s because Qbits can show multiple combinations of zeros and ones (0 & 1) at the same time (superposition)
+            </p>
+            <div class="codeCase">
+                <img src="https://cdn-cednl.nitrocdn.com/ZIEpBLjPiSWpOcIdsSTlIdzcQJzKTmWw/assets/images/optimized/rev-bce8e83/www.datatobiz.com/wp-content/uploads/2022/02/Classical-Computer-vs-Quantum-Computer.jpeg" width="715">
+            </div><br>
+            <p class="just">
+                Scientists use laser beams or microwaves to manipulate Qbits. Though the final result collapses to the quantum state of 0 or 1, the concept of entanglement is in force. When the two bits of the pair are placed at a distance, they are still connected to
+                each other. A change in the state of one Qbit will automatically result in the change of state for the related Qbit. Such connected groups of Qbits are powerful compared to single binary digits used in classical computing
+
+            </p>
+        </section>
+        <a id="Reasoning"></a>
+        <section class="main-section" id="Reasoning">
+
+            <header class="main-header">Quantum Machine Learning</header>
+
+            <p class="just">
+                Quantum machine learning (<strong>QML</strong>) relies on two major concepts- quantum data and hybrid quantum-classical models
+                <ul>
+                    <li class="list">Quantum data</li>
+                    <li class="list">Hybrid Quantum Classical Models</li>
+                </ul>
+
+            </p>
+            <p class="just">
+                Quantum data is the data that occurs in the natural or artificial quantum system or is generated by a quantum computer (data from Sycamore processor for Google’s demonstration is one example). Quantum data shows signs of superposition and entanglement.
+                This leads to joint probability distributions, which require a huge amount of classical computing power for processing and storing.
+                <br><br>
+
+            </p>
+            <p class="just">
+                Though a quantum model can generalize and represent data with a quantum mechanical origin, it still cannot generalize quantum data using a quantum processor alone. This is because the near-quantum processors are noisy and limited. NISQ processors should
+                work in tandem with quantum processors to make it an efficient model
+            </p>
+            <div class="codeCase">
+                <code>>>> from qiskit import QuantumCircuit, transpile
+
+                    >>> from qiskit.providers.basicaer import QasmSimulatorPy
+                    
+                    >>> qc = QuantumCircuit(2, 2)
+                    
+                    >>> qc.h(0)
+                    
+                    >>> qc.cx(0, 1)
+                    
+                    >>> qc.measure([0,1], [0,1])
+                    
+                    >>> backend_sim = QasmSimulatorPy()
+                    
+                    >>> transpiled_qc = transpile(qc, backend_sim)
+                    
+                    >>> result = backend_sim.run(transpiled_qc).result()
+                    
+                    >>> print(result.get_counts(qc))</code>
+            </div> <br>
+        </section>
+        <a id="Problem_Solving"></a>
+        <section class="main-section" id="Problem_Solving">
+            <header class="main-header">Conclusion</header>
+            <p class="just">
+                Quantum Computing offers several industries so many advantages. However, building and maintaining stable qubits and maintaining quantum coherence, which is essential for quantum computation, remain significant challenges. Scientists and researchers worldwide
+                are working to overcome these hurdles and unlock the full potential of quantum computing, a technology that promises to transform the way we solve problems and process information in the future.
+
+            </p>
+            <p class="just">
+                Many diverse problems have been solved by artificial intelligence programs. Some examples are finding the winning move (or sequence of moves) in a board game, devising mathematical proofs, and manipulating “virtual objects” in a computer-generated world.
+            </p>
+        </section>
+
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="footer">
+    <footer>
+        <span id="copyright">Copyright &#169;Bazinga 2020 </span
+      >
+    </footer></div>
+  </html>
